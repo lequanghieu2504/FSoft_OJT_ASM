@@ -1,0 +1,50 @@
+FW001
+Java Basic
+30
+active
+mandatory
+FW002
+Java OOP
+40
+active
+mandatory
+FW003
+Spring Core
+45
+active
+mandatory
+FW004
+Spring Boot
+50
+active
+mandatory
+FW005
+Hibernate
+35
+in-active
+optional
+FW006
+REST API
+25
+active
+optional
+FW007
+Microservices
+60
+active
+mandatory
+FW008
+Docker
+20
+active
+optional
+FW009
+Kubernetes
+30
+in-active
+N/A
+FW010
+DevOps Basic
+25
+active
+optional
