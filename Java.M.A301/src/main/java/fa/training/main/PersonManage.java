@@ -19,7 +19,7 @@ public class PersonManage {
             System.out.println("1. Input data");
             System.out.println("2. Update student by ID");
             System.out.println("3. Display teachers salary > 1000");
-            System.out.println("4. Report students pass course");
+            System.out.println("4. Report students pass course (final mark >=6)");
             System.out.println("0. Exit");
             choice = Integer.parseInt(scanner.nextLine());
 
