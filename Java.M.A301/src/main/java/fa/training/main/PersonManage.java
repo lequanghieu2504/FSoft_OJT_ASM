@@ -13,7 +13,7 @@ public class PersonManage {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int choice;
+        int choice = -1;
 
         do {
             System.out.println("1. Input data");
@@ -21,23 +21,40 @@ public class PersonManage {
             System.out.println("3. Display teachers salary > 1000");
             System.out.println("4. Report students pass course (final mark >=6)");
             System.out.println("0. Exit");
-            choice = Integer.parseInt(scanner.nextLine());
+            System.out.print("Choose: ");
 
-            switch (choice) {
-                case 1:
-                    inputData(scanner);
-                    break;
-                case 2:
-                    updateStudent(scanner);
-                    break;
-                case 3:
-                    displayHighSalaryTeacher();
-                    break;
-                case 4:
-                    reportPassedStudents();
-                    break;
+            try {
+                choice = Integer.parseInt(scanner.nextLine());
+
+                switch (choice) {
+                    case 1:
+                        inputData(scanner);
+                        break;
+                    case 2:
+                        updateStudent(scanner);
+                        break;
+                    case 3:
+                        displayHighSalaryTeacher();
+                        break;
+                    case 4:
+                        reportPassedStudents();
+                        break;
+                    case 0:
+                        System.out.println("Exit program");
+                        break;
+                    default:
+                        System.out.println("Invalid choice (0–4 only)");
+                }
+
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter a number.");
             }
+
+            System.out.println();
+
         } while (choice != 0);
+
+        scanner.close();
     }
 
     private static void inputData(Scanner scanner) {
