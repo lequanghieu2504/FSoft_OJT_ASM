@@ -72,8 +72,18 @@ public class PersonManage {
         System.out.print("Gender: ");
         String gender = scanner.nextLine();
 
+        if (!Validator.isValidGender(gender)) {
+            System.out.println("Invalid email");
+            return;
+        }
+
         System.out.print("Phone: ");
         String phone = scanner.nextLine();
+
+        if (Validator.isValidPhone(phone)) {
+            System.out.println("Invalid phone number");
+            return;
+        }
 
         System.out.print("Email: ");
         String email = scanner.nextLine();
