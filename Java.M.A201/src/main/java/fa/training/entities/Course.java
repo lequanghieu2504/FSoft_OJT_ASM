@@ -11,11 +11,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Course {
-    private String courseCode;  // course id
+    private String courseCode;
     private String courseName;
     private double duration;
-    private String status;      // active / in-active
-    private String flag;        // optional / mandatory / N/A
+    private String status;
+    private String flag;
 
     public void input() {
         Scanner sc = new Scanner(System.in);
